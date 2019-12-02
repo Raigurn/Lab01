@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ricardo Neves</title>
+</head>
+<style>
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    .fa-facebook {
+        background: #125688;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #125688;
+        color: white;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(57, 171, 247);
+        color: white;
+        text-align: center;
+    }
+
+    input,
+    textarea {
+        width: calc(100% - 18px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #1c87c9;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #666;
+    }
+
+    form {
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 2px 5px #f5f5f5;
+        background: #f5f5f5;
+    }
+
+    .modal {
+        left: 0;
+        top: 170px;
+    }
+
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+    }
+
+    .close,
+    .close2,
+    .close3,
+    .close4 {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus,
+    .close2:hover,
+    .close2:focus,
+    .close3:hover,
+    .close3:focus,
+    .close4:hover,
+    .close4:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .button {
+        background-color: white;
+        color: black;
+        border: 2px solid #008CBA;
+        width: 130px;
+    }
+
+    .button:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+</style>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <h3 class="header center blue-text">Informações Pessoais</h3><br>
+            <div class="row center">
+                <h5 class="header col s12 light"></h5>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <img src="IMG_8752_2.jpg" style="width:160px; border-radius: 50%;">
+    </div>
+    <br>
+    <div align="center">
+        <table style="width:3%">
+            <tr>
+                <th><button id="btnPessoal" class="button">Pessoal</button></th>
+            </tr>
+            <tr>
+                <td><button id="btnFamilia" class="button">Familia</button></td>
+            </tr>
+            <tr>
+                <td><button id="btnFormacao" class="button">Formação</button></td>
+            </tr>
+            <tr>
+                <td><button id="btnHobbies" class="button">Hobbies</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="Pessoal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <table style="width:100%">
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Email</th>
+                    <th>Nacionalidade</th>
+                    <th>Experiencia Profissional</th>
+                    <th>Competências Escolares</th>
+                </tr>
+                <tr>
+                    <td>Ricardo Barroso Neves</td>
+                    <td>19</td>
+                    <td>ricardoncbn@gmail.com</td>
+                    <td>Portuguesa</td>
+                    <td>ERASMUS+ (2.5 meses na Eslovénia)</td>
+                    <td>12º ano</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="Familia" class="modal">
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <table style="width:100%">
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Email</th>
+                    <th>Nacionalidade</th>
+                    <th>Competências Escolares</th>
+                </tr>
+                <tr>
+                    <td>Carlos do Nascimento Neves</td>
+                    <td>49</td>
+                    <td>calosmnneves@gmail.com</td>
+                    <td>Portuguesa</td>
+                    <td>Licenciatura Informatica de Gestão</td>
+                </tr>
+                <tr>
+                    <td>Teresa Barroso Neves</td>
+                    <td>48</td>
+                    <td>tebarrosoneves@gmail.com</td>
+                    <td>Portuguesa</td>
+                    <td>12º ano</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Barroso Neves</td>
+                    <td>12</td>
+                    <td>bncbneves@gmail.com</td>
+                    <td>Portuguesa</td>
+                    <td>7º ano(a decorrer)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="Formacao" class="modal">
+        <div class="modal-content">
+            <span class="close3">&times;</span>
+            <div class="row">
+                <div class="col s13 m4" style="padding-top: 42px;">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="IPS.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>O Instituto Politécnico de Setúbal (IPS) é uma instituição pública de ensino superior que
+                                se insere no
+                                subsistema politécnico.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.si.ips.pt/ips_si/web_base.gera_pagina?P_pagina=30847" target="_blank"
+                                style="color: blue;">Mais
+                                Informação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s13 m4" style="padding-top: 42px;">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="essa1819_2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>A Escola Secundária de Santo André, a ESSA, localiza-se numa zona urbana da freguesia de
+                                Santo André, concelho do Barreiro, distrito de Setúbal.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.aesa.edu.pt/edu/index.php/historiaessa" target="_blank"
+                                style="color: blue;">Mais
+                                Informação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s13 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="DSCF3348.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>D. Luís de Mendonça Furtado (1610-1677) Vice-rei da Índia. Era natural do Lavradio, terra
+                                que D. Pedro II lhe doou, juntamente com o título de conde</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.aebarreiro.pt/" target="_blank" style="color: blue;">Mais
+                                Informação</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="Hobbies" class="modal">
+        <div class="modal-content">
+            <span class="close4">&times;</span>
+            <div class="row">
+                <div class="col s13 m4" style="padding-top: 55px;">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Rocket-League.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Foi lançado pela primeira vez para Microsoft Windows e PlayStation 4 em julho de 2015,
+                                com as portes para o Xbox One, MacOS, Linux e Nintendo Switch sendo lançados
+                                posteriormente.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.rocketleague.com/" target="_blank" style="color: blue;">Mais
+                                Informação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s13 m4" style="padding-top: 55px;">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Counter-Strike_Global_Offensive.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Counter-Strike: Global Offensive (CS:GO) é um jogo online desenvolvido pela Valve
+                                Corporation e pela Hidden Path Entertainment, sendo uma sequência de Counter-Strike:
+                                Source.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://blog.counter-strike.net/" target="_blank" style="color: blue;">Mais
+                                Informação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s13 m4" style="padding-top: 15px;">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="dicas-estudar-vida-toda.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Estudar é o ato de se investir na obtenção de conhecimentos. Estuda-se visando à
+                                preparação para exames, ou, de um modo mais abrangente, para o futuro.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://pt.wikipedia.org/wiki/Estudo" target="_blank" style="color: blue;">Mais
+                                Informação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var modal = document.getElementById("Pessoal");
+        var modal2 = document.getElementById("Familia");
+        var modal3 = document.getElementById("Formacao");
+        var modal4 = document.getElementById("Hobbies");
+
+        var btn = document.getElementById("btnPessoal");
+        var btn2 = document.getElementById("btnFamilia");
+        var btn3 = document.getElementById("btnFormacao");
+        var btn4 = document.getElementById("btnHobbies");
+
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        var span4 = document.getElementsByClassName("close4")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        }
+
+        btn4.onclick = function () {
+            modal4.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+<footer class="footer">
+    <a href="https://www.instagram.com/rickyn.pt/?hl=pt" class="fa fa-instagram" target="_blank"></a>
+    <a href="https://www.facebook.com/ricardo.b.neves.3" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/ricardo-neves-589762188/" class="fa fa-linkedin" target="_blank"></a>
+</footer>
+
+</html>
