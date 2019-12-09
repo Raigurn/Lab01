@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Gestão de Restaurante</title>
+    <script src="/scripts/ementa.js"></script>
+    <link type="text/css" rel="stylesheet" href="/styles/style.css">
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body onload="Ementa.apresentar();">
+    <h1>
+        Ementa:
+    </h1>
+    
+    <div id="pratos"></div>
+
+    <h1>
+        Acções:
+    </h1>
+    
+    <a href="javascript: Ementa.acrescentar();">Acrescentar</a>
+    <a href="javascript: Ementa.remover();">Remover</a>
+    <a href="javascript: Ementa.procurar();">Procurar</a>
+</body>
+
+</html>
